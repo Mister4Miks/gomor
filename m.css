@@ -1,0 +1,275 @@
+@import url("https://fonts.cdnfonts.com/css/bebas-neue");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Big Shoulders Display", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  /* Выравниваем элементы по вертикали */
+  padding: 2% 10%;
+  width: 100%;
+  height: 150px;
+  background-color: #ffffff; /* Градиент от красного к синему слева направо */
+  transition: background-image 0.5s ease; /* Плавный переход цвета в течение 0.5 секунды */
+
+  /* Целевой цвет при наведении */
+}
+
+header p {
+  cursor: pointer;
+  padding: 2% 0;
+  /* Добавляем небольшой отступ между текстом и изображением */
+  margin: 0 4%;
+  font-size: 22px;
+  float: right; /* Выравниваем текст по правому краю */
+  color: rgb(123, 121, 121);
+}
+
+header img {
+  margin: 00% 4%;
+  border-radius: 50vw;
+  width: 80px; /* Устанавливаем фиксированную ширину изображения */
+}
+
+main {
+  color: rgb(255, 251, 251);
+  background: linear-gradient(#93959c, #4b4b4d);
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.inner-container {
+  max-width: 1620px;
+  margin: 0 auto;
+}
+
+.about-company__heading {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 111%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 0.3rem solid rgb(201, 197, 197);
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+}
+
+.about-company__top-row {
+  grid-gap: 2rem;
+  margin-bottom: 4.5rem;
+}
+.about-company__bottom-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32rem;
+}
+
+.about-company__numbers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 4rem;
+  grid-row-gap: 9rem;
+  margin-bottom: 0.8rem;
+  margin-right: 8rem;
+  max-width: 80rem;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.about-company__numbers-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about-company__numbers-card-number {
+  width: 300px;
+
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 123%;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgb(201, 197, 197);
+  margin-bottom: 1.7rem;
+}
+
+.about-company__numbers-card-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.about-company__intro-text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 130%;
+  margin-top: -0.3rem;
+}
+
+.about-company__features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.SEO_div {
+  display: flex;
+}
+
+.SEO_div img {
+  border-radius: 50vw;
+}
+
+.SEO_one,
+.SEO_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Добавляем выравнивание по центру по горизонтали */
+}
+
+.SEO_one img {
+  display: flex;
+
+  width: 30%;
+}
+
+.SEO_two img {
+  width: 30%;
+}
+
+.SEO_div p {
+  margin-top: 3%;
+  width: 70%;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  padding-top: 4%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 111%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 0.3rem solid rgb(201, 197, 197);
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  padding-top: 5%;
+  width: 100%;
+  height: 25vh;
+  background-color: #242525;
+}
+.Applications_p {
+  text-align: center;
+  width: 50%;
+}
+.Applications__div_p {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Applications_div {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Applications_div form,
+.Applications_div button {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Applications_div input {
+  border: none;
+  background: linear-gradient(#c1cddb, #d8d8dd);
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+
+  outline: none;
+  padding-left: 30px;
+}
+
+.Applications_div input:focus {
+  border: 1px solid rgb(120, 117, 117);
+}
+
+button {
+  cursor: pointer;
+  -webkit-box-shadow: 9px -2px 6px -1px rgb(112, 118, 186);
+  -moz-box-shadow: 11px -2px 6px -1px rgba(66, 68, 90, 1);
+  box-shadow: 9px 5px 2px -1px rgba(66, 68, 90, 1);
+  color: rgb(59, 55, 55);
+  margin-top: 1%;
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#646667, #cfd0d7);
+  transition: all 0.5s ease;
+}
+
+button:active {
+  transform: translateY(5px) translateX(9px);
+  box-shadow: none;
+}
+h3 {
+  margin-top: 4%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 111%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 0.3rem solid rgb(201, 197, 197);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.img_parthens {
+  width: 100px;
+  height: 100px;
+}
+
+.parthens div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parthens div img:not(.astra) {
+  width: 14%;
+  height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+
+  padding: 0 0rem 0 0.1rem;
+
+  box-sizing: border-box;
+}
+
+.astra {
+  width: 8%;
+}
